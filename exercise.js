@@ -32,8 +32,12 @@ function getItemById(items, id){
     return items.filter(item => item.id == id)[0];
 }
 
-function buildTransactions()
-    return
+function buildTransactions(sales, items){
+    return sales.map(sale => {
+        return Object.assign(sale, getItemById(items, sale.itemId));
+})}
+
+
 
 module.exports = {
     // Uncomment these as you write them
