@@ -13,17 +13,31 @@ const items = [{
     price: 2.38
 }];
 
-
+const sales = [{
+    itemId: 1,
+    quantity: 2
+},{
+    itemId: 2,
+    quantity: 2
+},{
+    itemId: 1,
+    quantity: 2
+},{
+    itemId: 3,
+    quantity: 3
+}];
 
 
 function getItemById(items, id){
     return items.filter(item => item.id == id)[0];
 }
 
+function buildTransactions()
+    return
 
 module.exports = {
     // Uncomment these as you write them
     getItemById,
-    // buildTransactions,
+    buildTransactions,
     // getTransactionsByItemDescription
 }
